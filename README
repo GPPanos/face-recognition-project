@@ -1,0 +1,42 @@
+# Face Detection Project
+
+This simple Python project utilizes the OpenCV library to perform real-time face detection using a webcam. The script captures video input, converts it to grayscale, and applies a pre-trained Haar Cascade classifier for face detection.
+
+## Prerequisites
+- Python 3.x
+- OpenCV library (`cv2`)
+
+## Installation
+1. Install the required libraries:
+   ```bash
+   pip install opencv-python
+   ```
+
+2. Download the Haar Cascade classifier XML file (`haarcascade_frontface_default.xml`) from the OpenCV GitHub repository or other reliable sources.
+
+3. Place the XML file in the same directory as the script.
+
+## Usage
+Run the script by executing the following command in your terminal:
+```bash
+python face_detection.py
+```
+
+The script will activate your webcam, and you'll see a live video feed with green rectangles around detected faces. Press 'a' key to exit the program.
+
+## Parameters
+Adjust the parameters in the script to customize the face detection:
+- `scaleFactor`: Controls the image scale reduction during the face detection process.
+- `minNeighbors`: Specifies the number of neighbors a candidate rectangle should have to retain it.
+- `minSize`: Sets the minimum object size to be considered.
+- `flags`: Specifies the operation mode for the face detection.
+
+Feel free to experiment with these parameters to achieve optimal face detection results.
+
+## License
+This project is licensed under the [MIT License](LICENSE), allowing for modification and distribution.
+
+## Acknowledgments
+- The project uses the OpenCV library for face detection.
+
+Feel free to contribute or provide feedback to enhance this simple face detection project!
